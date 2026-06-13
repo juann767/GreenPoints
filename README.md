@@ -10,8 +10,11 @@
 # Equipo de desarrollo
 
 Juan Espinal Espinal Coto SMSS102323
+
 Diego Martín López Moreno SMSS097824
+
 Walter Alexander Ramírez Benítez SMSS082124
+
 Franklin Aldahir Portillo Flores SMSS011624
 
 ---
