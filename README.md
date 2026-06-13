@@ -1,90 +1,148 @@
-# 🌱 GreenPoints — Laravel (Segundo Avance)
+# 🌱 GreenPoints — Proyecto Final
 
-Proyecto académico UGB — Programación Computacional IV  
-Laboratorio 1, Tercer Cómputo, Segundo Avance
+## Universidad Gerardo Barrios (UGB)
 
----
-
-## Instalación paso a paso
-
-```bash
-# 1. Crear proyecto Laravel base
-composer create-project laravel/laravel greenpoints
-
-# 2. Copiar las carpetas del ZIP dentro del proyecto:
-#    app/Http/Controllers/*  →  greenpoints/app/Http/Controllers/
-#    app/Models/*            →  greenpoints/app/Models/
-#    database/migrations/*   →  greenpoints/database/migrations/
-#    database/seeders/*      →  greenpoints/database/seeders/
-#    resources/views/*       →  greenpoints/resources/views/
-#    routes/web.php          →  greenpoints/routes/web.php  (reemplazar)
-
-# 3. Configurar .env
-DB_CONNECTION=sqlite
-# Eliminar las líneas DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, DB_PASSWORD
-
-# 4. Crear archivo de base de datos (Windows PowerShell)
-New-Item -Path "database\database.sqlite" -ItemType File
-
-# 5. Generar clave
-php artisan key:generate
-
-# 6. Ejecutar migraciones + seeders
-php artisan migrate --seed
-
-# 7. Levantar servidor
-php artisan serve
-```
-
-Abrir en el navegador: http://127.0.0.1:8000
-
-**Credenciales de prueba:**
-- Admin: `admin@greenpoints.com` / `password`
-- Usuario: `diego@mail.com` / `password`
+**Programación Computacional IV**
+**Proyecto Final**
 
 ---
 
-## Estructura implementada
+# Equipo de desarrollo
 
-### Modelos (app/Models/)
-| Modelo | Tabla | Descripción |
-|---|---|---|
-| Role | roles | Roles del sistema (admin, usuario) |
-| User | users | Usuarios con puntos y rol |
-| AccionEcologica | acciones_ecologicas | Tipos de reciclaje con puntos |
-| RegistroAccion | registros_acciones | Historial de reciclajes por usuario |
-| Dispositivo | dispositivos | Puntos ecológicos físicos |
-| Premio | premios | Catálogo de premios canjeables |
-| Canje | canjes | Historial de canjes realizados |
-
-### Controladores y rutas
-| Módulo | Rutas implementadas |
-|---|---|
-| Auth | GET/POST login, register — POST logout |
-| Dashboard | GET /dashboard |
-| Reciclaje | GET index, GET create, POST store, DELETE destroy |
-| Premios | GET index, POST canjear |
-| Dispositivos | GET index, GET create, POST store, GET edit, PUT update, DELETE destroy |
-
-### Vistas (resources/views/)
-- `landing.blade.php` — Página pública de inicio
-- `auth/login.blade.php` — Login
-- `auth/register.blade.php` — Registro
-- `layouts/app.blade.php` — Layout principal con sidebar
-- `dashboard/index.blade.php` — Panel del usuario
-- `reciclaje/index.blade.php` — Lista de reciclajes
-- `reciclaje/create.blade.php` — Formulario de registro
-- `premios/index.blade.php` — Catálogo + canje + historial
-- `dispositivos/index.blade.php` — Lista de dispositivos
-- `dispositivos/create.blade.php` — Registrar dispositivo
-- `dispositivos/edit.blade.php` — Editar dispositivo
+Juan Espinal Espinal Coto SMSS102323
+Diego Martín López Moreno SMSS097824
+Walter Alexander Ramírez Benítez SMSS082124
+Franklin Aldahir Portillo Flores SMSS011624
 
 ---
 
-## Módulos pendientes para siguiente avance
+# Descripción
 
-- Panel de administración (estadísticas globales, gestión de usuarios)
-- Gestión de acciones ecológicas desde el panel admin
-- Subida de imágenes para premios y dispositivos
-- Sistema de roles y middleware para restringir acceso admin
-- Notificaciones y correos
+**GreenPoints** es una aplicación web desarrollada con **Laravel** que busca incentivar el cuidado del medio ambiente mediante un sistema de recompensas basado en acciones ecológicas. La plataforma permite que los usuarios registren actividades de reciclaje, acumulen puntos y los utilicen para canjear premios, promoviendo así la participación en prácticas sostenibles.
+
+Además de las funcionalidades para los usuarios, el sistema incorpora herramientas administrativas para gestionar premios, dispositivos ecológicos y la información general de la plataforma.
+
+---
+
+#  Objetivo del proyecto
+
+Desarrollar una plataforma que fomente la cultura del reciclaje y la responsabilidad ambiental mediante un sistema de puntos y recompensas, utilizando tecnologías web modernas y una arquitectura organizada bajo el framework Laravel.
+
+---
+
+# Funcionalidades principales
+
+## Autenticación de usuarios
+
+El sistema cuenta con un módulo completo de autenticación que permite:
+
+* Registro de nuevos usuarios.
+* Inicio y cierre de sesión.
+* Acceso a funcionalidades según el tipo de usuario.
+
+---
+
+## Registro de acciones ecológicas
+
+Los usuarios pueden registrar actividades relacionadas con el reciclaje y otras acciones ambientales, generando un historial personal de participación.
+
+Entre sus funciones se encuentran:
+
+* Registro de nuevas acciones.
+* Consulta del historial.
+* Administración de registros.
+
+---
+
+## Sistema de puntos
+
+Cada acción ecológica realizada genera una cantidad determinada de puntos para el usuario, incentivando la participación constante dentro de la plataforma y permitiendo obtener beneficios mediante el sistema de recompensas.
+
+---
+
+## Catálogo y canje de premios
+
+La plataforma incorpora un catálogo de premios que pueden ser obtenidos utilizando los puntos acumulados.
+
+Este módulo permite:
+
+* Consultar los premios disponibles.
+* Realizar canjes.
+* Llevar un historial de premios obtenidos.
+
+---
+
+## Gestión de dispositivos ecológicos
+
+El sistema permite administrar los diferentes dispositivos o puntos ecológicos registrados, incluyendo operaciones de:
+
+* Consulta.
+* Registro.
+* Edición.
+* Eliminación.
+
+---
+
+## Mapa de puntos ecológicos
+
+GreenPoints incorpora un módulo de mapa que facilita la visualización de los puntos o dispositivos ecológicos registrados, proporcionando una referencia para los usuarios sobre su ubicación.
+
+---
+
+## Gestión de perfil
+
+Cada usuario dispone de un perfil desde el cual puede administrar su información personal, actualizar sus datos y modificar su contraseña.
+
+---
+
+## Generación de comprobantes
+
+El sistema incluye un módulo de comprobantes asociados a los registros realizados, permitiendo la consulta y visualización de comprobantes con código QR para validar la información correspondiente.
+
+---
+
+## Dashboard
+
+La aplicación cuenta con un panel principal que reúne la información más importante del usuario y facilita el acceso a los distintos módulos del sistema desde una interfaz organizada e intuitiva.
+
+---
+
+## Panel de administración
+
+El proyecto incorpora un área administrativa destinada a la gestión del sistema, desde la cual es posible administrar diferentes recursos y supervisar el funcionamiento general de la plataforma.
+
+---
+
+# Arquitectura
+
+El proyecto fue desarrollado utilizando la arquitectura **Modelo-Vista-Controlador (MVC)** proporcionada por Laravel, permitiendo una organización clara entre la lógica de negocio, la interfaz de usuario y el acceso a los datos.
+
+La aplicación está estructurada mediante:
+
+* Modelos
+* Controladores
+* Vistas Blade
+* Rutas
+* Migraciones
+* Seeders
+* Base de datos
+
+---
+
+# Tecnologías utilizadas
+
+* Laravel
+* PHP
+* Blade Templates
+* CSS
+* JavaScript
+* SQLite
+* Composer
+
+---
+
+# Impacto del proyecto
+
+GreenPoints propone una solución tecnológica para incentivar hábitos sostenibles mediante un sistema de gamificación, donde las acciones ecológicas realizadas por los usuarios se transforman en puntos y beneficios. De esta manera, la plataforma combina educación ambiental, participación ciudadana y desarrollo de software en una aplicación orientada al cuidado del medio ambiente.
+
+
