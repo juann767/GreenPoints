@@ -108,6 +108,7 @@ return [
     | the same address. Here you may specify a name and address that is
     | used globally for all emails that are sent by your application.
     |
+    /
     */
 
     'from' => [
