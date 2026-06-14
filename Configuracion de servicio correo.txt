@@ -1,0 +1,11 @@
+# Configuración del Servicio de Correo
+
+GreenPoints incorpora soporte para el envío de correos electrónicos mediante el sistema de notificaciones de Laravel. Para ello, el framework permite configurar distintos proveedores de correo según las necesidades del entorno de desarrollo o producción.
+
+Las opciones disponibles son:
+
+* **Mailtrap:** utilizado durante las fases de desarrollo y pruebas, permitiendo simular el envío de correos sin afectar usuarios reales.
+* **Gmail SMTP:** permite el envío de correos electrónicos reales a los usuarios registrados en la plataforma.
+* **Log Driver:** utilizado para desarrollo local, almacenando los mensajes generados en archivos de registro sin realizar envíos externos.
+
+Esta flexibilidad permite adaptar el sistema a diferentes escenarios de implementación, garantizando una gestión segura y eficiente de las notificaciones electrónicas.
