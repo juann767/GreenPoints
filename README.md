@@ -166,4 +166,9 @@ Estas características fortalecen la experiencia de usuario y promueven una part
 
 GreenPoints es una plataforma desarrollada para incentivar prácticas sostenibles mediante un sistema de puntos y recompensas. A través de herramientas como el registro de acciones ecológicas, canje de premios, geolocalización de puntos ecológicos y elementos de gamificación, el sistema fomenta la participación activa de los usuarios en el cuidado del medio ambiente, aplicando los conocimientos adquiridos durante el desarrollo de aplicaciones web con Laravel.
 
+# Trabajo Colaborativo y Aprendizajes
+
+Durante el desarrollo de GreenPoints se aplicaron metodologías de trabajo colaborativo para la planificación, diseño e implementación de cada módulo del sistema. El proyecto permitió fortalecer conocimientos en desarrollo web utilizando Laravel, gestión de bases de datos, arquitectura MVC, control de versiones y diseño de interfaces orientadas al usuario.
+
+Asimismo, se adquirió experiencia en la integración de funcionalidades como autenticación, sistemas de recompensas, generación de códigos QR, geolocalización y gamificación, contribuyendo al desarrollo de soluciones tecnológicas con impacto social y ambiental.
 
