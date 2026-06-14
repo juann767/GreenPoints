@@ -1,4 +1,4 @@
-# 🌱 GreenPoints — Proyecto Final
+#  GreenPoints — Proyecto Final
 
 ## Universidad Gerardo Barrios (UGB)
 
@@ -147,5 +147,23 @@ La aplicación está estructurada mediante:
 # Impacto del proyecto
 
 GreenPoints propone una solución tecnológica para incentivar hábitos sostenibles mediante un sistema de gamificación, donde las acciones ecológicas realizadas por los usuarios se transforman en puntos y beneficios. De esta manera, la plataforma combina educación ambiental, participación ciudadana y desarrollo de software en una aplicación orientada al cuidado del medio ambiente.
+
+
+# Funcionalidades Complementarias
+
+Además de las funcionalidades principales, GreenPoints incorpora elementos de gamificación que motivan la participación de los usuarios mediante:
+
+* Sistema de niveles ecológicos basado en puntos acumulados.
+* Insignias y logros obtenidos por reciclajes, puntos y canjes realizados.
+* Barras de progreso para visualizar el avance del usuario.
+* Estadísticas personales de actividad dentro de la plataforma.
+
+Estas características fortalecen la experiencia de usuario y promueven una participación constante en actividades orientadas al cuidado del medio ambiente.
+
+---
+
+# Conclusión
+
+GreenPoints es una plataforma desarrollada para incentivar prácticas sostenibles mediante un sistema de puntos y recompensas. A través de herramientas como el registro de acciones ecológicas, canje de premios, geolocalización de puntos ecológicos y elementos de gamificación, el sistema fomenta la participación activa de los usuarios en el cuidado del medio ambiente, aplicando los conocimientos adquiridos durante el desarrollo de aplicaciones web con Laravel.
 
 
